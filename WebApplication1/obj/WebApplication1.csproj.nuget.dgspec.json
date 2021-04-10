@@ -31,6 +31,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Users\\micxu\\Source\\Repos\\Assignment-SecuringApps_SWD6.2A\\ShoppingCart.Data\\ShoppingCart.Data.csproj": {
+                "projectPath": "C:\\Users\\micxu\\Source\\Repos\\Assignment-SecuringApps_SWD6.2A\\ShoppingCart.Data\\ShoppingCart.Data.csproj"
+              },
               "C:\\Users\\micxu\\Source\\Repos\\Assignment-SecuringApps_SWD6.2A\\ShoppingCart.Domain\\ShoppingCart.Domain.csproj": {
                 "projectPath": "C:\\Users\\micxu\\Source\\Repos\\Assignment-SecuringApps_SWD6.2A\\ShoppingCart.Domain\\ShoppingCart.Domain.csproj"
               }

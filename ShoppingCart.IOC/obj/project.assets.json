@@ -2178,6 +2178,7 @@
           "Microsoft.EntityFrameworkCore.Proxies": "3.1.9",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.9",
+          "ShoppingCart.Data": "1.0.0",
           "ShoppingCart.Domain": "1.0.0"
         },
         "compile": {

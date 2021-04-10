@@ -201,10 +201,10 @@ C:\Users\micxu\source\repos\Assignment - Securing Apps\WebApplication1\obj\Debug
 C:\Users\micxu\source\repos\Assignment - Securing Apps\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\WebApplication1.StaticWebAssets.xml
-C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\WebApplication1.exe
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\WebApplication1.deps.json
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\WebApplication1.runtimeconfig.json
@@ -400,3 +400,6 @@ C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\Create.cshtml.g.cs
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\Index.cshtml.g.cs
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\Upload.cshtml.g.cs

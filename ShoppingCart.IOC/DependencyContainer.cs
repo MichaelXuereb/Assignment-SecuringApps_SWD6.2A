@@ -39,6 +39,9 @@ namespace ShoppingCart.IOC
                 }
                 );
 
+            services.AddScoped<ITasksRepository, TasksRepository>();
+            services.AddScoped<ITasksService, TasksService>();
+
             services.AddScoped<IProductsRepository, ProductsRepository>();
             services.AddScoped<IProductsService, ProductsService>();
 
@@ -46,7 +49,7 @@ namespace ShoppingCart.IOC
             services.AddScoped<ICategoriesService, CategoriesService>();
 
             services.AddScoped<IMembersRepository, MembersRepository>();
-            services.AddScoped<IMembersService, MemberService>();
+            services.AddScoped<IMembersService, MemberService>();     
 
             services.AddAutoMapper(typeof(AutoMapperConfiguration));
             AutoMapperConfiguration.RegisterMappings();

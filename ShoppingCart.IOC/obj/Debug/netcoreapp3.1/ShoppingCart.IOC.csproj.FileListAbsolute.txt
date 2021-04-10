@@ -17,3 +17,22 @@ C:\Users\micxu\source\repos\Assignment - Securing Apps\ShoppingCart.IOC\obj\Debu
 C:\Users\micxu\source\repos\Assignment - Securing Apps\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.dll
 C:\Users\micxu\source\repos\Assignment - Securing Apps\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.pdb
 C:\Users\micxu\source\repos\Assignment - Securing Apps\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.genruntimeconfig.cache
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.IOC.deps.json
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.IOC.runtimeconfig.json
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.IOC.runtimeconfig.dev.json
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.IOC.dll
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.IOC.pdb
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.Application.dll
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.Data.dll
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.Domain.dll
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.Application.pdb
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.Data.pdb
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\bin\Debug\netcoreapp3.1\ShoppingCart.Domain.pdb
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.csprojAssemblyReference.cache
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.AssemblyInfoInputs.cache
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.AssemblyInfo.cs
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.csproj.CoreCompileInputs.cache
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.csproj.CopyComplete
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.dll
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.pdb
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.IOC\obj\Debug\netcoreapp3.1\ShoppingCart.IOC.genruntimeconfig.cache

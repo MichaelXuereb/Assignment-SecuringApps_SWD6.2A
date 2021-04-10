@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using ShoppingCart.Application.Interfaces;
 using WebApplication1.Models;
 
 namespace WebApplication1.Areas.Identity.Pages.Account
@@ -22,6 +23,7 @@ namespace WebApplication1.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IMembersService _membersService;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
@@ -29,12 +31,14 @@ namespace WebApplication1.Areas.Identity.Pages.Account
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IMembersService membersService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _membersService = membersService;
         }
 
         [BindProperty]
@@ -88,6 +92,17 @@ namespace WebApplication1.Areas.Identity.Pages.Account
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
+                    await _userManager.AddToRoleAsync(user, "STUDENT");
+
+                    _membersService.AddMember(
+                       new ShoppingCart.Application.ViewModels.MemberViewModel()
+                       {
+                           Email = Input.Email,
+                           FirstName = Input.FirstName,
+                           LastName = Input.LastName,
+                       }
+                   );
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
