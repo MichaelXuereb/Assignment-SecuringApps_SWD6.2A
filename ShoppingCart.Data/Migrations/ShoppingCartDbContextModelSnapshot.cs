@@ -87,6 +87,31 @@ namespace ShoppingCart.Data.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("ShoppingCart.Domain.Models.Submission", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("TaskFK")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("file")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TaskFK");
+
+                    b.ToTable("Submissions");
+                });
+
             modelBuilder.Entity("ShoppingCart.Domain.Models.Task", b =>
                 {
                     b.Property<Guid>("Id")
@@ -112,6 +137,15 @@ namespace ShoppingCart.Data.Migrations
                     b.HasOne("ShoppingCart.Domain.Models.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ShoppingCart.Domain.Models.Submission", b =>
+                {
+                    b.HasOne("ShoppingCart.Domain.Models.Task", "Task")
+                        .WithMany()
+                        .HasForeignKey("TaskFK")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

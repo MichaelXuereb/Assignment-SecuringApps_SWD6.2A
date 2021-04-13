@@ -56,9 +56,5 @@ namespace WebApplication1.Controllers
             }
         }
 
-        public IActionResult Upload(Guid id) {
-            var list = _taskService.GetTask(id);
-            return View(list);
-        }
     }
 }

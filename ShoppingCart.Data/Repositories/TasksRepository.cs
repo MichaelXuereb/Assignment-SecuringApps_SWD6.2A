@@ -36,6 +36,11 @@ namespace ShoppingCart.Data.Repositories
             return _context.Tasks.SingleOrDefault(x => x.Id == id);
         }
 
+        public Task GetTask(string desc)
+        {
+            return _context.Tasks.SingleOrDefault(x => x.description == desc);
+        }
+
         public IQueryable<Task> GetTasks()
         {
             return _context.Tasks;
