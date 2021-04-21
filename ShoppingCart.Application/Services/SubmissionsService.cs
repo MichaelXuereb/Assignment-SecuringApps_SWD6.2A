@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using ShoppingCart.Application.Interfaces;
 using ShoppingCart.Application.ViewModels;
 using ShoppingCart.Domain.Interfaces;
 using ShoppingCart.Domain.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ShoppingCart.Application.Services
@@ -37,6 +39,16 @@ namespace ShoppingCart.Application.Services
                 var result = _autoMapper.Map<SubmissionViewModel>(sb);
                 return result;
             }
+        }
+
+        public IQueryable<SubmissionViewModel> GetSubmissions(Guid id)
+        {
+            return _subrepo.GetSubmissions().Where(e => e.Task.Id == id).ProjectTo<SubmissionViewModel>(_autoMapper.ConfigurationProvider);
+        }
+
+        public IQueryable<SubmissionViewModel> GetSubmissions(string email)
+        {
+            return _subrepo.GetSubmissions().Where(e => e.email == email).ProjectTo<SubmissionViewModel>(_autoMapper.ConfigurationProvider);
         }
     }
 }

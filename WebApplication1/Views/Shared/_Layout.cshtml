@@ -28,6 +28,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Tasks" asp-action="Index">Tasks</a>
                         </li>
                         }
+
+                        @if (User.IsInRole("TEACHER")) {
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Submission" asp-route-email="@User.Identity.Name" asp-action="StudentSub">Submissions</a>
+                        </li>
+                        }
                         
                     </ul>
                 </div>

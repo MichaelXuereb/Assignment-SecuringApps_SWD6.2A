@@ -35,6 +35,30 @@ namespace ShoppingCart.Data.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("ShoppingCart.Domain.Models.Comment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("SubmissionFK")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SubmissionFK");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("ShoppingCart.Domain.Models.Member", b =>
                 {
                     b.Property<string>("Email")
@@ -130,6 +154,15 @@ namespace ShoppingCart.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tasks");
+                });
+
+            modelBuilder.Entity("ShoppingCart.Domain.Models.Comment", b =>
+                {
+                    b.HasOne("ShoppingCart.Domain.Models.Submission", "Submission")
+                        .WithMany()
+                        .HasForeignKey("SubmissionFK")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ShoppingCart.Domain.Models.Product", b =>

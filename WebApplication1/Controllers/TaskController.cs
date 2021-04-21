@@ -39,7 +39,7 @@ namespace WebApplication1.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public IActionResult Create(IFormFile file, TaskViewModel data){
+        public IActionResult Create(TaskViewModel data){
             data.Email = User.Identity.Name;
 
             if (ModelState.IsValid)

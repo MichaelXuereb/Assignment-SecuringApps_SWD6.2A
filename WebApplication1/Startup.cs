@@ -102,17 +102,18 @@ namespace WebApplication1
             app.UseStaticFiles();
 
             var cacheMaxAge = "604800";
-            //app.UseStaticFiles(new StaticFileOptions
-            //{
-            //    FileProvider = new PhysicalFileProvider(
-            //            Path.Combine(env.ContentRootPath, "ValuableFiles")),
-            //    RequestPath = "/ValuableFiles",
-            //    OnPrepareResponse = ctx => {
-            //        ctx.Context.Response.Headers.Append(
-            //                 "Cache-Control", $"public, max-age={cacheMaxAge}");
-            //    }
-            //});
-
+       /*
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                        Path.Combine(env.ContentRootPath, "ValuableFiles")),
+                RequestPath = "/ValuableFiles",
+                OnPrepareResponse = ctx => {
+                    ctx.Context.Response.Headers.Append(
+                             "Cache-Control", $"public, max-age={cacheMaxAge}");
+                }
+            });
+       */
 
 
             app.UseRouting();

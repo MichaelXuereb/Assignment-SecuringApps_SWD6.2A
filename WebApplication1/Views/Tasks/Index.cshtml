@@ -40,15 +40,17 @@
                 @{
                     if (User.IsInRole("TEACHER"))
                     {
-                        <p>
-                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                            @Html.ActionLink("Student Uploads", "Student Uploads", new { /* id=item.PrimaryKey */ }) |
-                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                        </p>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Student Uploads", "TeacherSub", "Submission", new {id = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString())}) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Upload", "Upload", "Submission", new { id = item.Id })
+
+                    </p>
                     }
                     else
                     {
-                        @Html.ActionLink("Upload", "Create", "Submission", new { id = item.Id })
+                        @Html.ActionLink("Upload", "Upload", "Submission", new { id = item.Id })
                     }
                 }
 

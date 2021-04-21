@@ -42,6 +42,9 @@ namespace ShoppingCart.IOC
             services.AddScoped<ISubmissionsRepository, SubmissionRepository>();
             services.AddScoped<ISubmissionsService, SubmissionsService>();
 
+            services.AddScoped<ICommentsRepository, CommentRepository>();
+            services.AddScoped<ICommentService, CommentsService>();
+
             services.AddScoped<ITasksRepository, TasksRepository>();
             services.AddScoped<ITasksService, TasksService>();
 

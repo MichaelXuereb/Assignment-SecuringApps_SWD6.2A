@@ -27,5 +27,10 @@ namespace ShoppingCart.Data.Repositories
         {
             return _context.Submissions.SingleOrDefault(x => x.Id == id);
         }
+
+        public IQueryable<Submission> GetSubmissions()
+        {
+            return _context.Submissions;
+        }
     }
 }

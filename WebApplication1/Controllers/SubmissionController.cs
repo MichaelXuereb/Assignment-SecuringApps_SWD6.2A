@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using ShoppingCart.Application.Interfaces;
 using ShoppingCart.Application.ViewModels;
 using WebApplication1.Models;
+using WebApplication1.Utility;
 
 namespace WebApplication1.Controllers
 {
@@ -36,18 +37,34 @@ namespace WebApplication1.Controllers
 
         [HttpGet]
         [Authorize]
-        public IActionResult Create(Guid id)
+        public IActionResult Upload(Guid id)
         {
             return View();
+        }
+
+        public IActionResult TeacherSub(string id) {
+            string idDec = Encryption.SymmetricDecrypt(id);
+            Guid newGuid = Guid.Parse(idDec);
+            var list = _subService.GetSubmissions(newGuid);
+            return View(list);
+        }
+
+        public IActionResult StudentSub(string email)
+        {
+            //id = id.Replace("/", "+");
+            //string idDec = Encryption.SymmetricDecrypt(id);
+            //Guid newGuid = Guid.Parse(idDec);
+            var list = _subService.GetSubmissions(email);
+            return View(list);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public IActionResult Create(IFormFile file, SubmissionViewModel data, Guid id)
+        public IActionResult Upload(IFormFile file, SubmissionViewModel data, Guid id)
         {
             data.Task = _taskService.GetTask(id);
-            
+            data.Email = User.Identity.Name;
             if (ModelState.IsValid)
             {
                 string uniqueFilename;
