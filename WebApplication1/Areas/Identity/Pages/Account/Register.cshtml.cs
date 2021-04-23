@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
@@ -13,12 +15,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using MimeKit;
 using ShoppingCart.Application.Interfaces;
 using WebApplication1.Models;
 
 namespace WebApplication1.Areas.Identity.Pages.Account
 {
-    [AllowAnonymous]
+    [Authorize(Roles = "TEACHER")]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -87,8 +90,22 @@ namespace WebApplication1.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, LastName = Input.LastName, Address= Input.Address };
-                Input.Password = "Test#123";
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, LastName = Input.LastName /*Address= Input.Address*/ };
+
+                string validChars = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*?_-";
+                Random random = new Random();
+
+                // Select one random character at a time from the string  
+                // and create an array of chars  
+                char[] chars = new char[10];
+                for (int i = 0; i < 10; i++)
+                {
+                    chars[i] = validChars[random.Next(0, validChars.Length)];
+                }
+
+                string pass = new string(chars);
+
+                Input.Password = pass;
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
@@ -105,26 +122,26 @@ namespace WebApplication1.Areas.Identity.Pages.Account
 
                     _logger.LogInformation("User created a new account with password.");
 
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
-
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
-                    if (_userManager.Options.SignIn.RequireConfirmedAccount)
-                    {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                    try{
+                        MailMessage message = new MailMessage("michaelmcast@outlook.com", "michaelmcast@outlook.com");
+                        message.Subject = "User Registered";
+                        message.Body = "--- Welcome User ----\n " +
+                            "Please find your account details below \n" +
+                            "Username: " + Input.Email + "\n" +
+                            "Password : " + Input.Password;
+                        SmtpClient client = new SmtpClient("smtp-mail.outlook.com", 587);
+                        System.Net.NetworkCredential basicCredential1 = new
+                        System.Net.NetworkCredential("michaelmcast@outlook.com", "mcast262199");
+                        client.EnableSsl = true;
+                        client.UseDefaultCredentials = false;
+                        client.Credentials = basicCredential1;
+                        client.Send(message);
+                    }catch (Exception ex){
+                        throw ex;
                     }
-                    else
-                    {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
-                    }
+
+                    return LocalRedirect(returnUrl);
+
                 }
                 foreach (var error in result.Errors)
                 {

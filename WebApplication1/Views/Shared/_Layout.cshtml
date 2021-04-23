@@ -30,9 +30,9 @@
                         }
 
                         @if (User.IsInRole("TEACHER")) {
-                        
+                        string email = WebApplication1.Utility.Encryption.SymmetricEncrypt(User.Identity.Name);
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Submission" asp-route-email="@User.Identity.Name" asp-action="StudentSub">Submissions</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Submission" asp-route-email="@email" asp-action="StudentSub">Submissions</a>
                         </li>
                         }
                         

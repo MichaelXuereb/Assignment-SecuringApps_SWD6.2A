@@ -51,10 +51,8 @@ namespace WebApplication1.Controllers
 
         public IActionResult StudentSub(string email)
         {
-            //id = id.Replace("/", "+");
-            //string idDec = Encryption.SymmetricDecrypt(id);
-            //Guid newGuid = Guid.Parse(idDec);
-            var list = _subService.GetSubmissions(email);
+            string emailNew = Encryption.SymmetricDecrypt(email);
+            var list = _subService.GetSubmissions(emailNew);
             return View(list);
         }
 

@@ -359,9 +359,6 @@ C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfo.cs
-C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
-C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorAssemblyInfo.cache
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorAssemblyInfo.cs
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.TagHelpers.input.cache
@@ -406,3 +403,9 @@ C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Submission\TeacherSub.cshtml.g.cs
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Submission\StudentSub.cshtml.g.cs
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Comment\Create.cshtml.g.cs
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
