@@ -15,7 +15,6 @@ C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Domain\
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Domain\bin\Debug\netcoreapp3.1\ShoppingCart.Domain.runtimeconfig.dev.json
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Domain\bin\Debug\netcoreapp3.1\ShoppingCart.Domain.dll
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Domain\bin\Debug\netcoreapp3.1\ShoppingCart.Domain.pdb
-C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Domain\obj\Debug\netcoreapp3.1\ShoppingCart.Domain.csprojAssemblyReference.cache
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Domain\obj\Debug\netcoreapp3.1\ShoppingCart.Domain.AssemblyInfoInputs.cache
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Domain\obj\Debug\netcoreapp3.1\ShoppingCart.Domain.AssemblyInfo.cs
 C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Domain\obj\Debug\netcoreapp3.1\ShoppingCart.Domain.csproj.CoreCompileInputs.cache

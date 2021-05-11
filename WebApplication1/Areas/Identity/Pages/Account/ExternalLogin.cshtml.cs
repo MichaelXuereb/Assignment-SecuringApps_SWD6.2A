@@ -13,7 +13,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using ShoppingCart.Application.Interfaces;
 using WebApplication1.Models;
+using WebApplication1.Utility;
+using static WebApplication1.Utility.Encryption;
 
 namespace WebApplication1.Areas.Identity.Pages.Account
 {
@@ -23,18 +26,21 @@ namespace WebApplication1.Areas.Identity.Pages.Account
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
+        private readonly IMembersService _membersService;
         private readonly ILogger<ExternalLoginModel> _logger;
 
         public ExternalLoginModel(
             SignInManager<ApplicationUser> signInManager,
             UserManager<ApplicationUser> userManager,
             ILogger<ExternalLoginModel> logger,
+            IMembersService membersService,
             IEmailSender emailSender)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _logger = logger;
             _emailSender = emailSender;
+            _membersService = membersService;
         }
 
         [BindProperty]
@@ -52,6 +58,12 @@ namespace WebApplication1.Areas.Identity.Pages.Account
             [Required]
             [EmailAddress]
             public string Email { get; set; }
+
+            [Required]
+            public string FirstName { get; set; }
+
+            [Required]
+            public string LastName { get; set; }
         }
 
         public IActionResult OnGetAsync()
@@ -145,7 +157,7 @@ namespace WebApplication1.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email };
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, LastName = Input.LastName};
 
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
@@ -166,6 +178,23 @@ namespace WebApplication1.Areas.Identity.Pages.Account
 
                         await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                             $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                       
+                        await _userManager.AddToRoleAsync(user, "TEACHER");
+                        /* 
+                        AsymmetricKeys keys = new AsymmetricKeys();
+                        keys = Encryption.GenerateAsymmetricKeys();
+                        
+                        _membersService.AddMember(
+                              new ShoppingCart.Application.ViewModels.MemberViewModel()
+                              {
+                                  Email = Input.Email,
+                                  FirstName = Input.FirstName,
+                                  LastName = Input.LastName,
+                                  PublicKey = keys.PublicKey,
+                                  PrivateKey = keys.PrivateKey
+                              }
+                          );
+                        */
 
                         // If account confirmation is required, we need to show the link if we don't have a real email sender
                         if (_userManager.Options.SignIn.RequireConfirmedAccount)

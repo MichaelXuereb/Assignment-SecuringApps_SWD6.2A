@@ -18,6 +18,8 @@ using Microsoft.Extensions.Logging;
 using MimeKit;
 using ShoppingCart.Application.Interfaces;
 using WebApplication1.Models;
+using WebApplication1.Utility;
+using static WebApplication1.Utility.Encryption;
 
 namespace WebApplication1.Areas.Identity.Pages.Account
 {
@@ -107,23 +109,29 @@ namespace WebApplication1.Areas.Identity.Pages.Account
 
                 Input.Password = pass;
                 var result = await _userManager.CreateAsync(user, Input.Password);
+                
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, "STUDENT");
-
+                    AsymmetricKeys keys = new AsymmetricKeys();
+                    keys = Encryption.GenerateAsymmetricKeys();
+                    string teacherEmail = User.Identity.Name;
                     _membersService.AddMember(
                        new ShoppingCart.Application.ViewModels.MemberViewModel()
                        {
                            Email = Input.Email,
                            FirstName = Input.FirstName,
                            LastName = Input.LastName,
+                           PublicKey = keys.PublicKey,
+                           PrivateKey = keys.PrivateKey,
+                           TeacherEmail = teacherEmail
                        }
                    );
 
                     _logger.LogInformation("User created a new account with password.");
 
                     try{
-                        MailMessage message = new MailMessage("michaelmcast@outlook.com", "michaelmcast@outlook.com");
+                        MailMessage message = new MailMessage("michaelmcast@outlook.com", Input.Email);
                         message.Subject = "User Registered";
                         message.Body = "--- Welcome User ----\n " +
                             "Please find your account details below \n" +

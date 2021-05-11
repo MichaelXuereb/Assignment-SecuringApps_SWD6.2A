@@ -11,5 +11,9 @@ namespace ShoppingCart.Domain.Models
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string PublicKey { get; set; }
+        public string PrivateKey { get; set; }
+        public string TeacherEmail { get; set; }
+
     }
 }

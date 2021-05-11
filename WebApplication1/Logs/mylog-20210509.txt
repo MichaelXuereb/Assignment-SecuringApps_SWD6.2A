@@ -1,0 +1,116 @@
+2021-05-09T00:20:49.7430908+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-09T00:20:49.7499090+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-09T00:20:49.7524599+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-09T00:20:49.7552800+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-09T00:20:49.7570480+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-09T00:20:54.5538134+02:00 0HM8IDU4GL3AK:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:07.1281526+02:00 0HM8IDU4GL3AM:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:16.1095692+02:00 0HM8IDU4GL3AN:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:16.1801713+02:00 0HM8IDU4GL3AN:00000003 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:17.7955957+02:00 0HM8IDU4GL3AN:0000000D [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:17.8124956+02:00 0HM8IDU4GL3AN:0000000E [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:26.8196709+02:00 0HM8IDU4GL3AP:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:26.8471440+02:00 0HM8IDU4GL3AP:00000003 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:27.3085063+02:00 0HM8IDU4GL3AR:0000000B [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:27.3390433+02:00 0HM8IDU4GL3AR:0000000C [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:28.7567039+02:00 0HM8IDU4GL3B2:00000029 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:21:28.7867785+02:00 0HM8IDU4GL3B2:0000002A [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:22:42.4227809+02:00 0HM8IDU4GL3B4:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:22:42.4890247+02:00 0HM8IDU4GL3B4:00000003 [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:22:42.9245785+02:00 0HM8IDU4GL3BB:0000000C [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:22:42.9403810+02:00 0HM8IDU4GL3BB:0000000D [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:22:44.3586125+02:00 0HM8IDU4GL3B4:0000002B [INF] Home Index accessed (f306b1a0)
+2021-05-09T00:22:44.3711374+02:00 0HM8IDU4GL3B4:0000002C [INF] Home Index accessed (f306b1a0)
+2021-05-09T15:05:24.9020191+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-09T15:05:24.9087326+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-09T15:05:24.9110440+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-09T15:05:24.9130080+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-09T15:05:24.9146809+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-09T15:05:28.5724367+02:00 0HM8ITCE71SN0:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-09T15:05:31.6191895+02:00 0HM8ITCE71SN0:00000007 [INF] Home Index accessed (f306b1a0)
+2021-05-09T15:05:37.0551365+02:00 0HM8ITCE71SN0:0000000B [INF] User logged in. (fdce0db4)
+2021-05-09T15:05:37.2776711+02:00 0HM8ITCE71SN0:0000000D [INF] Home Index accessed (f306b1a0)
+2021-05-09T15:05:49.8510789+02:00 0HM8ITCE71SN0:00000017 [INF] IP: ::70a2:5927:e586:6471
+Time: 09/05/2021 15:05:49
+User: micxuereb@hotmail.com
+Assignment submitted successfully. (06f847f8)
+2021-05-09T15:05:54.0421171+02:00 0HM8ITCE71SN0:0000001B [ERR] IP: ::70a2:5927:e586:6471
+Time: 09/05/2021 15:05:54
+User: micxuereb@hotmail.com
+Something went wrong (9064a003)
+2021-05-09T15:05:54.0609813+02:00 0HM8ITCE71SN0:0000001B [ERR] The view '"Download"' was not found. Searched locations: ["/Views/Submission/Download.cshtml", "/Views/Shared/Download.cshtml", "/Pages/Shared/Download.cshtml"] (9bb2756c)
+2021-05-09T15:05:54.1633528+02:00 0HM8ITCE71SN0:0000001B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Download' was not found. The following locations were searched:
+/Views/Submission/Download.cshtml
+/Views/Shared/Download.cshtml
+/Pages/Shared/Download.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-05-09T15:12:56.0458669+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-09T15:12:56.0510595+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-09T15:12:56.0534571+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-09T15:12:56.0750879+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-09T15:12:56.0777967+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-09T15:12:59.7826052+02:00 0HM8ITGKKVUUC:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-09T15:13:25.3715167+02:00 0HM8ITGKKVUUC:00000007 [INF] IP: ::70a2:5927:e586:6471
+Time: 09/05/2021 15:13:25
+User: micxuereb@hotmail.com
+Assignment submitted successfully. (c735e978)
+2021-05-09T15:13:29.2714256+02:00 0HM8ITGKKVUUC:0000000B [INF] IP: ::70a2:5927:e586:6471
+Time: 09/05/2021 15:13:29
+User: micxuereb@hotmail.com
+PDF downloaded (6a370dcc)
+2021-05-09T15:13:40.3200846+02:00 0HM8ITGKKVUUC:00000011 [ERR] IP: ::70a2:5927:e586:6471
+Time: 09/05/2021 15:13:40
+User: micxuereb@hotmail.com
+Something went wrong (0059c4cc)
+2021-05-09T15:13:40.3398521+02:00 0HM8ITGKKVUUC:00000011 [ERR] The view '"Download"' was not found. Searched locations: ["/Views/Submission/Download.cshtml", "/Views/Shared/Download.cshtml", "/Pages/Shared/Download.cshtml"] (9bb2756c)
+2021-05-09T15:13:40.4069489+02:00 0HM8ITGKKVUUC:00000011 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Download' was not found. The following locations were searched:
+/Views/Submission/Download.cshtml
+/Views/Shared/Download.cshtml
+/Pages/Shared/Download.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-05-09T15:15:15.7377031+02:00  [INF] Application is shutting down... (90f52c38)
+2021-05-09T23:58:09.1719590+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-09T23:58:09.1803041+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-09T23:58:09.1841019+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-09T23:58:09.1884720+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-09T23:58:09.1907566+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-09T23:58:11.6666097+02:00 0HM8J6M46OPSO:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-09T23:58:27.1707051+02:00 0HM8J6M46OPSO:0000000B [INF] Home Index accessed (f306b1a0)
+2021-05-09T23:58:31.8966298+02:00 0HM8J6M46OPSO:00000013 [INF] "Michael Xuereb" logged in with "Google" provider. (107abac5)
+2021-05-09T23:58:31.9138350+02:00 0HM8J6M46OPSO:00000015 [INF] Home Index accessed (f306b1a0)

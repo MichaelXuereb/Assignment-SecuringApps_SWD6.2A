@@ -16,6 +16,7 @@ namespace ShoppingCart.Domain.Models
         public virtual Task Task { get; set; }
         public string description { get; set; }
         public string file { get; set; }
+        public string signature { get; set; }
         public String email { get; set; }
     }
 }

@@ -70,6 +70,15 @@ namespace ShoppingCart.Data.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PrivateKey")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PublicKey")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TeacherEmail")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Email");
 
                     b.ToTable("Members");
@@ -127,6 +136,9 @@ namespace ShoppingCart.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("file")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("signature")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

@@ -57,9 +57,10 @@ namespace WebApplication1
             services.Configure<IdentityOptions>(
                  options =>
                  {
-                     options.Password.RequiredUniqueChars = 2;
+                     //options.Password.RequiredUniqueChars = 1;
                      options.Password.RequiredLength = 8;
                      options.Lockout.MaxFailedAccessAttempts = 5;
+                     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
                  }
                 );
 

@@ -43,5 +43,10 @@ namespace ShoppingCart.Application.Services
         {
             return _taskrepo.GetTasks().ProjectTo<TaskViewModel>(_autoMapper.ConfigurationProvider);
         }
+
+        public IQueryable<TaskViewModel> GetTasks(string email)
+        {
+            return _taskrepo.GetTasks().Where(e => e.email == email).ProjectTo<TaskViewModel>(_autoMapper.ConfigurationProvider);
+        }
     }
 }

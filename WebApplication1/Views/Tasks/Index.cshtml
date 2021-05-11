@@ -5,10 +5,14 @@
 }
 
 <h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@{
+    if (User.IsInRole("TEACHER"))
+    {
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+        }
+    }
 <table class="table">
     <thead>
         <tr>
@@ -25,38 +29,37 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Deadline)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @{
-                    if (User.IsInRole("TEACHER"))
-                    {
-                    <p>
-                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("Student Uploads", "TeacherSub", "Submission", new {id = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString())}) |
-                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("Upload", "Upload", "Submission", new { id = item.Id })
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Deadline)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @{
+                        if (User.IsInRole("TEACHER"))
+                        {
+                            <p>
+                                @Html.ActionLink("Student Uploads", "TeacherSub", "Submission", new { id = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString()) }) |
+                                @Html.ActionLink("Upload", "Upload", "Submission", new { idEnc = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString()) })
 
-                    </p>
+                            </p>
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Upload", "Upload", "Submission", new { idEnc = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString()) })
+                        }
                     }
-                    else
-                    {
-                        @Html.ActionLink("Upload", "Upload", "Submission", new { id = item.Id })
-                    }
-                }
 
 
-            </td>
-        </tr>
-}
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

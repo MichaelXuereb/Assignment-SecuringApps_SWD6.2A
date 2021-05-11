@@ -40,7 +40,8 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.ActionLink("Comments", "Create", "Comment", new { id = item.Id }) |
+                @Html.ActionLink("Comments", "Create", "Comment", new { idEnc = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString()) }) |
+                @Html.ActionLink("Download File", "Download", "Submission", new { idEnc = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString()) })
             </td>
         </tr>
 }

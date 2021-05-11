@@ -1,0 +1,69 @@
+2021-05-07T18:21:19.1526244+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-07T18:21:19.1587932+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-07T18:21:19.1605571+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-07T18:21:19.1621151+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-07T18:21:19.1637154+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-07T18:21:23.3778818+02:00 0HM8HEGIR388D:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-07T18:21:53.4843037+02:00 0HM8HEGIR388D:0000000F [INF] Home Index accessed (f306b1a0)
+2021-05-07T18:22:08.6065874+02:00 0HM8HEGIR388D:00000019 [INF] "Michael Xuereb" logged in with "Google" provider. (107abac5)
+2021-05-07T18:22:08.6265259+02:00 0HM8HEGIR388D:0000001B [INF] Home Index accessed (f306b1a0)
+2021-05-07T18:23:22.3111578+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-07T18:23:22.3164170+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-07T18:23:22.3187865+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-07T18:23:22.3215569+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-07T18:23:22.3234280+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-07T18:23:23.6059444+02:00 0HM8HEHNG48D6:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-07T18:23:30.2113225+02:00 0HM8HEHNG48D6:00000005 [INF] Home Index accessed (f306b1a0)
+2021-05-07T18:23:54.4667539+02:00 0HM8HEHNG48D6:00000009 [INF] User logged in. (fdce0db4)
+2021-05-07T18:23:54.6477588+02:00 0HM8HEHNG48D6:0000000B [INF] Home Index accessed (f306b1a0)
+2021-05-07T18:24:18.9270846+02:00 0HM8HEHNG48D6:00000011 [INF] IP: ::2cff:90ec:5ced:1bd7
+Time: 07/05/2021 18:24:18
+User: micxuereb@hotmail.com
+Assignment submitted successfully. (4da4b457)
+2021-05-07T19:02:10.1348955+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-07T19:02:10.1403663+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-07T19:02:10.1421536+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-07T19:02:10.1449591+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-07T19:02:10.1466010+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-07T19:02:13.6541667+02:00 0HM8HF7D83E27:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-07T19:02:25.5799365+02:00 0HM8HF7D83E28:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-07T19:42:36.6192538+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-07T19:42:36.6253933+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-07T19:42:36.6273803+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-07T19:42:36.6290588+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-07T19:42:36.6307411+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-07T19:42:39.6760264+02:00 0HM8HFU0BBHNT:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-07T19:42:43.2647977+02:00 0HM8HFU0BBHNT:00000007 [INF] Home Index accessed (f306b1a0)
+2021-05-07T19:42:50.5237368+02:00 0HM8HFU0BBHNT:0000000F [INF] "Michael Xuereb" logged in with "Google" provider. (107abac5)
+2021-05-07T19:42:50.5502552+02:00 0HM8HFU0BBHNT:00000011 [INF] Home Index accessed (f306b1a0)
+2021-05-07T19:48:05.0796359+02:00 0HM8HFU0BBHNT:00000017 [INF] IP: ::2cff:90ec:5ced:1bd7
+Time: 07/05/2021 19:48:05
+User: xuerebmic@gmail.com
+Task inserted successfully (b96d0e5f)
+2021-05-07T19:48:11.9955711+02:00 0HM8HFU0BBHNT:00000019 [INF] IP: ::2cff:90ec:5ced:1bd7
+Time: 07/05/2021 19:48:11
+User: xuerebmic@gmail.com
+Task inserted successfully (a5a892a3)
+2021-05-07T19:48:22.2522783+02:00 0HM8HFU0BBHNT:0000001F [INF] IP: ::2cff:90ec:5ced:1bd7
+Time: 07/05/2021 19:48:22
+User: xuerebmic@gmail.com
+Task inserted successfully (b8f86841)
+2021-05-07T19:48:52.5887679+02:00 0HM8HFU0BBHNT:00000021 [INF] IP: ::2cff:90ec:5ced:1bd7
+Time: 07/05/2021 19:48:52
+User: xuerebmic@gmail.com
+Task inserted successfully (358bfa3b)
+2021-05-07T19:48:55.2168816+02:00 0HM8HFU0BBHNT:00000027 [INF] Home Index accessed (f306b1a0)
+2021-05-07T19:49:11.1385530+02:00 0HM8HFU0BBHNT:0000002B [INF] User logged in. (fdce0db4)
+2021-05-07T19:49:11.2186359+02:00 0HM8HFU0BBHNT:0000002D [INF] Home Index accessed (f306b1a0)
+2021-05-07T22:31:16.7638086+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-07T22:31:16.7721622+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-07T22:31:16.7740606+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-07T22:31:16.7756020+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-07T22:31:16.7779365+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-07T22:31:20.7923643+02:00 0HM8HIS8CQGDM:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-07T23:03:26.6230927+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-07T23:03:26.6286977+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-07T23:03:26.6317531+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-07T23:03:26.6334475+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-07T23:03:26.6350824+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-07T23:03:30.2387085+02:00 0HM8HJE7HHNAK:00000001 [INF] Home Index accessed (f306b1a0)

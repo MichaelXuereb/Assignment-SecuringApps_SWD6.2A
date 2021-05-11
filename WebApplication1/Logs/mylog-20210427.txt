@@ -1,0 +1,194 @@
+2021-04-27T12:47:42.0895990+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T12:47:42.0947905+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T12:47:42.0975098+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T12:47:42.0996982+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T12:47:42.1027534+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T12:47:43.9934998+02:00 0HM89D7H6TMHR:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T12:47:58.9648974+02:00 0HM89D7H6TMHR:0000001B [INF] "Michael Xuereb" logged in with "Google" provider. (107abac5)
+2021-04-27T12:48:09.0713098+02:00 0HM89D7H6TMHR:0000001F [WRN] User "74045c97-2c8e-4276-b26b-fc4f0fd0b8b1" password validation failed: "PasswordRequiresNonAlphanumeric;PasswordRequiresDigit". (2f223212)
+2021-04-27T12:48:11.9583638+02:00 0HM89D7H6TMHR:00000021 [INF] User created a new account with password. (693a7015)
+2021-04-27T12:48:14.2608091+02:00 0HM89D7H6TMHR:00000023 [INF] Home Index accessed (f306b1a0)
+2021-04-27T12:50:39.2294315+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T12:50:39.2358219+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T12:50:39.2388788+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T12:50:39.2432418+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T12:50:39.2475982+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T12:50:40.7140133+02:00 0HM89D95VE0I5:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T12:51:21.9244494+02:00 0HM89D95VE0I5:00000005 [WRN] User "a68be9e4-15d6-4984-ac03-7fdf6209e981" password validation failed: "PasswordRequiresDigit". (2f223212)
+2021-04-27T12:51:39.9081835+02:00 0HM89D95VE0I5:00000007 [INF] User created a new account with password. (693a7015)
+2021-04-27T12:51:41.7788284+02:00 0HM89D95VE0I5:00000009 [INF] Home Index accessed (f306b1a0)
+2021-04-27T13:05:31.1135192+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T13:05:31.1208720+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T13:05:31.1241050+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T13:05:31.1271049+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T13:05:31.1364006+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T13:05:32.5687853+02:00 0HM89DHFOB263:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T13:05:48.1299578+02:00 0HM89DHFOB263:00000005 [INF] User created a new account with password. (693a7015)
+2021-04-27T13:05:50.1334534+02:00 0HM89DHFOB263:00000007 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:11:11.2522990+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:11:11.2577125+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:11:11.2610458+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:11:11.2628156+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:11:11.2644596+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:11:13.9913604+02:00 0HM89EM600NOA:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:11:41.3100362+02:00 0HM89EM600NOA:0000000D [ERR] Error happend while saving file. (5d55b718)
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Length.
+   at Internal.NativeCrypto.CapiHelper.EncryptKey(SafeKeyHandle safeKeyHandle, Byte[] pbKey, Int32 cbKey, Boolean foep, Byte[]& pbEncryptedKey)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] rgb, Boolean fOAEP)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] data, RSAEncryptionPadding padding)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 188
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 219
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:11:59.1628979+02:00 0HM89EM600NOA:00000011 [ERR] Error happend while saving file. (5d55b718)
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Length.
+   at Internal.NativeCrypto.CapiHelper.EncryptKey(SafeKeyHandle safeKeyHandle, Byte[] pbKey, Int32 cbKey, Boolean foep, Byte[]& pbEncryptedKey)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] rgb, Boolean fOAEP)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] data, RSAEncryptionPadding padding)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 188
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 219
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:14:41.9721913+02:00 0HM89EM600NOA:00000015 [ERR] Error happend while saving file. (5d55b718)
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Length.
+   at Internal.NativeCrypto.CapiHelper.EncryptKey(SafeKeyHandle safeKeyHandle, Byte[] pbKey, Int32 cbKey, Boolean foep, Byte[]& pbEncryptedKey)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] rgb, Boolean fOAEP)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] data, RSAEncryptionPadding padding)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 188
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 219
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:15:05.5679099+02:00 0HM89EM600NOA:00000019 [ERR] Error happend while saving file. (5d55b718)
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Length.
+   at Internal.NativeCrypto.CapiHelper.EncryptKey(SafeKeyHandle safeKeyHandle, Byte[] pbKey, Int32 cbKey, Boolean foep, Byte[]& pbEncryptedKey)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] rgb, Boolean fOAEP)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] data, RSAEncryptionPadding padding)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 188
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 219
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:15:32.6733058+02:00 0HM89EM600NOA:0000001D [ERR] Error happend while saving file. (5d55b718)
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Length.
+   at Internal.NativeCrypto.CapiHelper.EncryptKey(SafeKeyHandle safeKeyHandle, Byte[] pbKey, Int32 cbKey, Boolean foep, Byte[]& pbEncryptedKey)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] rgb, Boolean fOAEP)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] data, RSAEncryptionPadding padding)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 188
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 219
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:20:26.4248225+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:20:26.4309781+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:20:26.4331176+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:20:26.4350934+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:20:26.4384248+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:20:28.0193131+02:00 0HM89ERBGUA9H:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:20:44.7210615+02:00 0HM89ERBGUA9H:00000007 [ERR] Error happend while saving file. (5d55b718)
+System.Security.Cryptography.CryptographicException: Specified padding mode is not valid for this algorithm.
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] data, RSAEncryptionPadding padding)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 188
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 219
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:22:02.4869237+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:22:02.4943303+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:22:02.4966318+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:22:02.5016154+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:22:02.5037730+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:22:04.2070186+02:00 0HM89ES84IATF:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:22:21.6572970+02:00 0HM89ES84IATF:00000007 [ERR] Error happend while saving file. (5d55b718)
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Length.
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] rgb, Boolean fOAEP)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 188
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 219
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:24:15.9711533+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:24:15.9787738+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:24:15.9828617+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:24:16.0063818+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:24:16.0107540+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:24:17.4093141+02:00 0HM89ETFTLKH2:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:24:27.5017779+02:00 0HM89ETFTLKH2:00000007 [ERR] Error happend while saving file. (5d55b718)
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Length.
+   at Internal.NativeCrypto.CapiHelper.EncryptKey(SafeKeyHandle safeKeyHandle, Byte[] pbKey, Int32 cbKey, Boolean foep, Byte[]& pbEncryptedKey)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] rgb, Boolean fOAEP)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] data, RSAEncryptionPadding padding)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 197
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 229
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:28:22.0156523+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:28:22.0208241+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:28:22.0227633+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:28:22.0244454+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:28:22.0260828+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:28:23.1312045+02:00 0HM89EVP4RU8E:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:28:35.3514713+02:00 0HM89EVP4RU8E:00000007 [ERR] Error happend while saving file. (5d55b718)
+System.InvalidOperationException: The inner stream position has changed unexpectedly.
+   at Microsoft.AspNetCore.Http.ReferenceReadStream.VerifyPosition()
+   at Microsoft.AspNetCore.Http.ReferenceReadStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.Stream.CopyTo(Stream destination, Int32 bufferSize)
+   at System.IO.Stream.CopyTo(Stream destination)
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 109
+2021-04-27T14:29:37.5283914+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:29:37.5332139+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:29:37.5351607+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:29:37.5367676+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:29:37.5408937+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:29:38.6283543+02:00 0HM89F0FL9PEU:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:29:54.7803946+02:00 0HM89F0FL9PEU:00000007 [ERR] Error happend while saving file. (5d55b718)
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Length.
+   at Internal.NativeCrypto.CapiHelper.EncryptKey(SafeKeyHandle safeKeyHandle, Byte[] pbKey, Int32 cbKey, Boolean foep, Byte[]& pbEncryptedKey)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] rgb, Boolean fOAEP)
+   at System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(Byte[] data, RSAEncryptionPadding padding)
+   at WebApplication1.Utility.Encryption.AsymmetricEnrypt(String data, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 189
+   at WebApplication1.Utility.Encryption.HybridEncrypt(MemoryStream clearFile, String publicKey) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Utility\Encryption.cs:line 221
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 106
+2021-04-27T14:31:23.5192511+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:31:23.5449971+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:31:23.5745661+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:31:23.5801988+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:31:23.5827482+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:31:25.0978871+02:00 0HM89F1F7H1EK:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:53:47.0770149+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:53:47.0846772+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:53:47.0899386+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:53:47.0949212+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:53:47.1006619+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:53:50.5884685+02:00 0HM89FDVPGTGR:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:54:30.3290112+02:00 0HM89FDVPGTGR:00000007 [ERR] Error happend while saving file. (5d55b718)
+System.InvalidOperationException: The inner stream position has changed unexpectedly.
+   at Microsoft.AspNetCore.Http.ReferenceReadStream.VerifyPosition()
+   at Microsoft.AspNetCore.Http.ReferenceReadStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.Stream.CopyTo(Stream destination, Int32 bufferSize)
+   at System.IO.Stream.CopyTo(Stream destination)
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 109
+2021-04-27T14:56:50.0909470+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:56:50.0958805+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:56:50.0979566+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:56:50.0994208+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:56:50.1007972+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:56:51.9832805+02:00 0HM89FFMA5S71:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:57:08.6801349+02:00 0HM89FFMA5S71:00000007 [ERR] Error happend while saving file. (5d55b718)
+System.InvalidOperationException: The inner stream position has changed unexpectedly.
+   at Microsoft.AspNetCore.Http.ReferenceReadStream.VerifyPosition()
+   at Microsoft.AspNetCore.Http.ReferenceReadStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.Stream.CopyTo(Stream destination, Int32 bufferSize)
+   at System.IO.Stream.CopyTo(Stream destination)
+   at WebApplication1.Controllers.SubmissionController.Upload(IFormFile file, SubmissionViewModel data, Guid id) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Controllers\SubmissionController.cs:line 115
+2021-04-27T14:57:53.3880365+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:57:53.3945497+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:57:53.3995546+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:57:53.4013564+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:57:53.4028450+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:57:54.9262608+02:00 0HM89FG93VMAS:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T14:59:09.8448570+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T14:59:09.8496327+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T14:59:09.8520173+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T14:59:09.8538094+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T14:59:09.8560411+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T14:59:11.4677273+02:00 0HM89FGVUAN0F:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T15:04:12.1802285+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T15:04:12.1895239+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T15:04:12.1921020+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T15:04:12.1940219+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T15:04:12.1958738+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T15:04:13.7896493+02:00 0HM89FJPVIQFC:00000001 [INF] Home Index accessed (f306b1a0)
+2021-04-27T20:53:08.2888452+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-04-27T20:53:08.2983373+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-04-27T20:53:08.3004579+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-27T20:53:08.3019829+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-27T20:53:08.3034416+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-04-27T20:53:12.0162047+02:00 0HM89LMPETQIA:00000001 [INF] Home Index accessed (f306b1a0)
