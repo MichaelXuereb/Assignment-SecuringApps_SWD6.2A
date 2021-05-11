@@ -185,13 +185,13 @@ namespace WebApplication1.Controllers
                         else
                         {
                             _logger.LogError("IP: " + addr[1].ToString() + "\nTime: " + DateTime.Now + "\nUser: " + User.Identity.Name + "\nFile is not valid and acceptable or size is greater than 10Mb");
-                            ModelState.AddModelError("file", "File is not valid and acceptable or size is greater than 10Mb");
+                            ModelState.AddModelError("", "File is not valid and acceptable or size is greater than 10Mb");
                             return View(myModel);
                         }
                     }
                     else {
                         _logger.LogError("IP: " + addr[1].ToString() + "\nTime: " + DateTime.Now + "\nUser: " + User.Identity.Name + "\nNo file was selected");
-                        ModelState.AddModelError("file", "No file was selected");
+                        ModelState.AddModelError("", "No file was selected");
                         return View(myModel);
                     }
                 }

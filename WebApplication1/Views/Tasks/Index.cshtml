@@ -46,9 +46,7 @@
                         if (User.IsInRole("TEACHER"))
                         {
                             <p>
-                                @Html.ActionLink("Student Uploads", "TeacherSub", "Submission", new { id = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString()) }) |
-                                @Html.ActionLink("Upload", "Upload", "Submission", new { idEnc = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString()) })
-
+                                @Html.ActionLink("Student Uploads", "TeacherSub", "Submission", new { id = WebApplication1.Utility.Encryption.SymmetricEncrypt(item.Id.ToString()) })
                             </p>
                         }
                         else

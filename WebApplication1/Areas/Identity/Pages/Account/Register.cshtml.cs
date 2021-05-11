@@ -96,11 +96,9 @@ namespace WebApplication1.Areas.Identity.Pages.Account
 
                 string validChars = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*?_-";
                 Random random = new Random();
-
-                // Select one random character at a time from the string  
-                // and create an array of chars  
-                char[] chars = new char[10];
-                for (int i = 0; i < 10; i++)
+ 
+                char[] chars = new char[15];
+                for (int i = 0; i < 15; i++)
                 {
                     chars[i] = validChars[random.Next(0, validChars.Length)];
                 }

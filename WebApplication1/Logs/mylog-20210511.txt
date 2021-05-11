@@ -159,3 +159,289 @@ Task inserted successfully (eae1ff9f)
 2021-05-11T19:45:09.7326385+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
 2021-05-11T19:45:12.5530451+02:00 0HM8KKI2QP1AA:00000001 [INF] Home Index accessed (f306b1a0)
 2021-05-11T20:23:13.3725799+02:00  [INF] Application is shutting down... (90f52c38)
+2021-05-11T20:59:18.7554502+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-11T20:59:18.7629222+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-11T20:59:18.7654556+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-11T20:59:18.7692250+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-11T20:59:18.7715730+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-11T20:59:22.2020171+02:00 0HM8KLRGMVTA7:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:01:30.0558317+02:00 0HM8KLRGMVTA7:00000005 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:02:38.0688550+02:00 0HM8KLRGMVTA7:0000000F [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:03:31.2031762+02:00 0HM8KLRGMVTA7:00000027 [INF] User created an account using "Google" provider. (b6d39947)
+2021-05-11T21:03:31.2601012+02:00 0HM8KLRGMVTA7:00000029 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:04:11.8257394+02:00 0HM8KLRGMVTA7:0000002D [ERR] Failed executing DbCommand ("11"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Members] ([Email], [FirstName], [LastName], [PrivateKey], [PublicKey], [TeacherEmail])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (627a98df)
+2021-05-11T21:04:11.9033311+02:00 0HM8KLRGMVTA7:0000002D [ERR] An exception occurred in the database while saving changes for context type '"ShoppingCart.Data.Context.ShoppingCartDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Members'. Cannot insert duplicate key in object 'dbo.Members'. The duplicate key value is (micxuereb@hotmail.com).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:7c81dfa4-a4bc-479a-b229-316cf1d333b0
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Members'. Cannot insert duplicate key in object 'dbo.Members'. The duplicate key value is (micxuereb@hotmail.com).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:7c81dfa4-a4bc-479a-b229-316cf1d333b0
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ShoppingCart.Data.Repositories.MembersRepository.AddMember(Member m) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Data\Repositories\MembersRepository.cs:line 19
+2021-05-11T21:04:12.1275126+02:00 0HM8KLRGMVTA7:0000002D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Members'. Cannot insert duplicate key in object 'dbo.Members'. The duplicate key value is (micxuereb@hotmail.com).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:7c81dfa4-a4bc-479a-b229-316cf1d333b0
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ShoppingCart.Data.Repositories.MembersRepository.AddMember(Member m) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Data\Repositories\MembersRepository.cs:line 19
+   at ShoppingCart.Application.Services.MemberService.AddMember(MemberViewModel m) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\ShoppingCart.Application\Services\MemberService.cs:line 32
+   at WebApplication1.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync(String returnUrl) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Areas\Identity\Pages\Account\Register.cshtml.cs:line 119
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-05-11T21:05:29.0370590+02:00 0HM8KLRGMVTA7:00000033 [WRN] User "9b6d2803-100f-4055-914b-c2d0ff20e186" password validation failed: "PasswordRequiresNonAlphanumeric;PasswordRequiresUpper". (2f223212)
+2021-05-11T21:05:30.6786838+02:00 0HM8KLRGMVTA7:00000035 [WRN] User "03b201c9-ebd0-4869-98f7-5a43b8d66bc4" password validation failed: "PasswordRequiresDigit". (2f223212)
+2021-05-11T21:05:31.7337166+02:00 0HM8KLRGMVTA7:00000037 [WRN] User "093a9bda-76c0-42c1-ad9b-42402932540b" validation failed: "DuplicateUserName". (5dc28e15)
+2021-05-11T21:05:32.4201536+02:00 0HM8KLRGMVTA7:00000039 [WRN] User "67e78717-0aa6-4102-ba8c-c13ba3622531" validation failed: "DuplicateUserName". (5dc28e15)
+2021-05-11T21:05:58.0331696+02:00 0HM8KLRGMVTA7:0000003B [WRN] User "4f09b3d4-464d-4499-81bd-f6e00518880d" password validation failed: "PasswordRequiresDigit". (2f223212)
+2021-05-11T21:05:59.0883536+02:00 0HM8KLRGMVTA7:0000003D [INF] User created a new account with password. (693a7015)
+2021-05-11T21:06:01.9268917+02:00 0HM8KLRGMVTA7:0000003F [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:14:26.2447474+02:00 0HM8KLRGMVTA7:00000045 [ERR] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:14:26
+User: xuerebmic@gmail.com
+Incorrect Datetime (604e2c89)
+2021-05-11T21:15:29.4111702+02:00 0HM8KLRGMVTA7:00000047 [INF] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:15:29
+User: xuerebmic@gmail.com
+Task inserted successfully (d6efe428)
+2021-05-11T21:20:03.4241346+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-11T21:20:03.4301843+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-11T21:20:03.4369392+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-11T21:20:03.4385106+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-11T21:20:03.4403188+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-11T21:20:09.9388097+02:00 0HM8KM73NHIS0:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:21:55.2065180+02:00 0HM8KM73NHIS0:00000009 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:22:23.5126847+02:00 0HM8KM73NHIS0:0000000D [INF] User logged in. (fdce0db4)
+2021-05-11T21:22:23.7207545+02:00 0HM8KM73NHIS0:0000000F [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:23:51.8975283+02:00 0HM8KM73NHIS0:00000015 [ERR] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:23:51
+User: micxuereb@hotmail.com
+No file was selected (ca22f3a0)
+2021-05-11T21:24:01.0179685+02:00 0HM8KM73NHIS0:00000017 [INF] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:24:01
+User: micxuereb@hotmail.com
+Assignment submitted successfully. (0b0aba60)
+2021-05-11T21:24:23.4518809+02:00 0HM8KM73NHIS0:00000019 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Request body too large.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException.Throw(RequestRejectionReason reason)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2MessageBody.OnReadStarting()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.MessageBody.TryStart()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2MessageBody.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.BufferedReadStream.EnsureBufferedAsync(Int32 minCount, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.ReadAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReader.ReadNextSectionAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenStore.GetRequestTokensAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-05-11T21:25:08.6663585+02:00 0HM8KM73NHIS0:00000021 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Request body too large.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException.Throw(RequestRejectionReason reason)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2MessageBody.OnReadStarting()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.MessageBody.TryStart()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2MessageBody.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.BufferedReadStream.EnsureBufferedAsync(Int32 minCount, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.ReadAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReader.ReadNextSectionAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenStore.GetRequestTokensAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-05-11T21:25:26.0498299+02:00 0HM8KM73NHIS0:00000025 [ERR] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:25:26
+User: micxuereb@hotmail.com
+File is not valid and acceptable or size is greater than 10Mb (c8c7dc3e)
+2021-05-11T21:25:42.3100578+02:00 0HM8KM73NHIS0:00000027 [ERR] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:25:42
+User: micxuereb@hotmail.com
+File is not valid and acceptable or size is greater than 10Mb (e484df5f)
+2021-05-11T21:26:36.5121347+02:00 0HM8KM73NHIS0:00000029 [ERR] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:26:36
+User: micxuereb@hotmail.com
+No file was selected (2794b181)
+2021-05-11T21:26:57.0636470+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-11T21:26:57.0694867+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-11T21:26:57.0751591+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-11T21:26:57.0790745+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-11T21:26:57.0807812+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-11T21:26:58.9356005+02:00 0HM8KMAUVJB19:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:27:07.0605925+02:00 0HM8KMAUVJB19:00000007 [ERR] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:27:07
+User: micxuereb@hotmail.com
+No file was selected (00e40182)
+2021-05-11T21:27:17.7152573+02:00 0HM8KMAUVJB19:00000009 [ERR] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:27:17
+User: micxuereb@hotmail.com
+File is not valid and acceptable or size is greater than 10Mb (933bdf7c)
+2021-05-11T21:28:51.5610853+02:00 0HM8KMAUVJB19:00000015 [INF] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:28:51
+User: micxuereb@hotmail.com
+Comment was added successfully (858b80bf)
+2021-05-11T21:28:59.1053179+02:00 0HM8KMAUVJB19:00000017 [INF] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:28:59
+User: micxuereb@hotmail.com
+Comment was added successfully (34b4030a)
+2021-05-11T21:32:19.6061428+02:00 0HM8KMAUVJB19:0000001B [INF] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:32:19
+User: micxuereb@hotmail.com
+PDF downloaded (4cbf57e6)
+2021-05-11T21:32:24.8750693+02:00 0HM8KMAUVJB19:0000001F [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:32:32.5351296+02:00 0HM8KMAUVJB19:00000027 [INF] "Michael Xuereb" logged in with "Google" provider. (107abac5)
+2021-05-11T21:32:32.5527316+02:00 0HM8KMAUVJB19:00000029 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:33:05.5741954+02:00 0HM8KMAUVJB19:00000031 [INF] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:33:05
+User: xuerebmic@gmail.com
+Comment was added successfully (c99e46ee)
+2021-05-11T21:33:16.8604236+02:00 0HM8KMAUVJB19:00000037 [INF] IP: ::801:d6c2:e42:9f78
+Time: 11/05/2021 21:33:16
+User: xuerebmic@gmail.com
+PDF downloaded (d9513b16)
+2021-05-11T21:35:12.2513205+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-11T21:35:12.2573763+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-11T21:35:12.2632463+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-11T21:35:12.2650538+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-11T21:35:12.2680378+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-11T21:35:13.6094021+02:00 0HM8KMFIFJVLN:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:35:29.8071634+02:00 0HM8KMFIFJVLN:00000005 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:37:09.2889171+02:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2021-05-11T21:37:09.2979051+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-05-11T21:37:09.3015342+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-11T21:37:09.3043024+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-11T21:37:09.3071719+02:00  [INF] Content root path: "C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1" (b5d60022)
+2021-05-11T21:37:10.6919714+02:00 0HM8KMGLDAN4M:00000001 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:37:21.3785399+02:00 0HM8KMGLDAN4M:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WebApplication1.Areas.Identity.Pages.Account.ExternalLoginModel.OnGetCallbackAsync(String returnUrl, String remoteError) in C:\Users\micxu\Source\Repos\Assignment-SecuringApps_SWD6.2A\WebApplication1\Areas\Identity\Pages\Account\ExternalLogin.cshtml.cs:line 101
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-05-11T21:38:10.8635763+02:00 0HM8KMGLDAN4M:00000015 [INF] "Michael Xuereb" logged in with "Google" provider. (107abac5)
+2021-05-11T21:38:10.9072873+02:00 0HM8KMGLDAN4M:00000017 [INF] Home Index accessed (f306b1a0)
+2021-05-11T21:38:41.6092009+02:00 0HM8KMGLDAN4M:0000001B [INF] User created a new account with password. (693a7015)
+2021-05-11T21:38:43.8589349+02:00 0HM8KMGLDAN4M:0000001D [INF] Home Index accessed (f306b1a0)
